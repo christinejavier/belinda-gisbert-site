@@ -78,6 +78,8 @@ body{
       width: 30%;
       font-size: 200%;
       text-decoration: none;
+      opacity: .8;
+      border: #fff solid 3px;
     }
 }
 
@@ -130,6 +132,7 @@ body{
   bottom: 0px;
   margin: 0 auto;
   padding: 1% 0%;
+  overflow: hidden;
 }
 
 .contact-buttons{
@@ -138,7 +141,7 @@ body{
 
 .contact-info{
   font-family: $classy-font;
-  padding-top: 1%;
+  font-size: 80%;
   float: left;
 }
 
@@ -149,7 +152,6 @@ body{
 }
 #designer{
   padding-left: 0;
-  padding-top: 2%;
   font-size: 11px;
 }
 #designer-link, a:link{

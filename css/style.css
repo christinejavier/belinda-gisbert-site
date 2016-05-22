@@ -62,7 +62,9 @@ body {
   #resume-button:hover, #work-button:hover, #skills-button:hover {
     width: 30%;
     font-size: 200%;
-    text-decoration: none; }
+    text-decoration: none;
+    opacity: .8;
+    border: #fff solid 3px; }
 
 #work-button {
   background-color: #96A7DB;
@@ -97,14 +99,15 @@ body {
   background: #2C2825;
   bottom: 0px;
   margin: 0 auto;
-  padding: 1% 0%; }
+  padding: 1% 0%;
+  overflow: hidden; }
 
 .contact-buttons {
   float: right; }
 
 .contact-info {
   font-family: "open_sanscondensed_light", helvetica;
-  padding-top: 1%;
+  font-size: 80%;
   float: left; }
 
 #copyright-button {
@@ -114,7 +117,6 @@ body {
 
 #designer {
   padding-left: 0;
-  padding-top: 2%;
   font-size: 11px; }
 
 #designer-link, a:link {
