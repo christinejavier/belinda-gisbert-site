@@ -1,71 +1,61 @@
 @font-face {
-    font-family: 'open_sanscondensed_light';
-    src: url('opensans-condlight-webfont.woff2') format('woff2'),
-         url('opensans-condlight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'open_sanscondensed_light';
+  src: url('opensans-condlight-webfont.woff2') format('woff2'), url('opensans-condlight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
 $classy-font: 'open_sanscondensed_light', helvetica;
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
-.container-fluid{
+.container-fluid {
   margin: 0;
   padding: 0;
 }
-
-body{
+body {
   color: #090E00;
   background: #49949F;
   font-family: $classy-font;
   font-size: 16px;
 }
-
-.first-row{
+.first-row {
   width: 100%;
   background: #E8382A;
-  right: 0px;
-  margin: 0% 0%;
-  padding: 4% 0%;
+  right: 0;
+  margin: 0;
+  padding: 4% 0;
 }
-
-.intro-divs{
+.intro-divs {
   padding-top: 3%;
 }
-
-#belinda{
-  font-family:$classy-font;
+#belinda {
+  font-family: $classy-font;
   font-size: 60px;
   text-align: center;
   color: #fff;
   letter-spacing: 30px;
 }
-
-#belinda-pic{
+#belinda-pic {
   width: 100%;
   height: auto;
 }
-
-
-#short-intro{
+#short-intro {
   padding-top: 0;
   font-family: $classy-font;
   font-size: 40px;
 }
-
-#long-intro{
+#long-intro {
   padding-right: 4%;
+  font-size: 120%;
+  color: #161010;
 }
-
-#resume-button{
+#about-button {
   font-family: $classy-font;
   font-size: 150%;
   text-align: center;
-  padding: 10% 0%;
+  padding: 10% 0;
   margin: 4% 3%;
   border-radius: 90%;
   overflow: hidden;
@@ -74,28 +64,25 @@ body{
   display: inline-block;
   background-color: #F9A353;
   color: #B86212;
-    &:hover {
-      width: 30%;
-      font-size: 200%;
-      text-decoration: none;
-      opacity: .8;
-      border: #fff solid 3px;
-    }
+  &:hover {
+    width: 30%;
+    font-size: 200%;
+    text-decoration: none;
+    opacity: 0.8;
+    border: #fff solid 3px;
+  }
 }
-
-#work-button{
-  @extend #resume-button;
+#work-button {
+  @extend #about-button;
   background-color: #96A7DB;
   color: #6246AB;
 }
-
-#skills-button{
-  @extend #resume-button;
+#skills-button {
+  @extend #about-button;
   background-color: #96D727;
   color: #0C9324;
 }
-
-#popup-resume{
+#popup-about {
   width: 80%;
   margin-left: 6%;
   margin-bottom: 15%;
@@ -107,53 +94,46 @@ body{
   background-color: #282D3D;
   color: #fff;
 }
-
-#popup-work{
-  @extend #popup-resume;
+#popup-work {
+  @extend #popup-about;
 }
-
-#popup-skills{
-  @extend #popup-resume;
+#popup-skills {
+  @extend #popup-about;
 }
-
-.hide-buttons{
+.hide-buttons {
   color: #BA926D;
-  padding: 2% 0%;
-  margin: 2% 0%;
+  padding: 2% 0;
+  margin: 2% 0;
   text-align: center;
   font-size: 30px;
 }
-
-
-.last-row{
+.last-row {
   color: #F2C9AA;
   width: 100%;
   background: #2C2825;
-  bottom: 0px;
+  bottom: 0;
   margin: 0 auto;
-  padding: 1% 0%;
+  padding: 1% 0;
   overflow: hidden;
 }
-
-.contact-buttons{
+.contact-buttons {
   float: right;
 }
-
-.contact-info{
+.contact-info {
   font-family: $classy-font;
   font-size: 80%;
   float: left;
 }
-
-#copyright-button{
-  padding-right: 0px;
+#copyright-button {
+  padding-right: 0;
   padding-top: 3%;
   font-size: 30px;
 }
-#designer{
+#designer {
   padding-left: 0;
   font-size: 11px;
 }
-#designer-link, a:link{
+#designer-link,
+a:link {
   color: #F9A353;
 }
