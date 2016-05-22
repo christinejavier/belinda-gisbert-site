@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('opensans-condlight-webfont.woff2') format('woff2'),
+         url('opensans-condlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$classy-font: 'open_sanscondensed_light', helvetica;
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: #090E00;
+  background: #49949F;
+  font-family: $classy-font;
+  font-size: 16px;
+}
+
+.first-row{
+  width: 100%;
+  background: #E8382A;
+  right: 0px;
+  margin: 0% 0%;
+  padding: 4% 0%;
+}
+
+.intro-divs{
+  padding-top: 3%;
+}
+
+#belinda{
+  font-family:$classy-font;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 30px;
+}
+
+#belinda-pic{
+  width: 100%;
+  height: auto;
+}
+
+
+#short-intro{
+  padding-top: 0;
+  font-family: $classy-font;
+  font-size: 40px;
+}
+
+#long-intro{
+  padding-right: 4%;
+}
+
+#resume-button{
+  font-family: $classy-font;
+  font-size: 150%;
+  text-align: center;
+  padding: 10% 0%;
+  margin: 4% 3%;
+  border-radius: 90%;
+  overflow: hidden;
+  width: 25%;
+  height: 35%;
+  display: inline-block;
+  background-color: #F9A353;
+  color: #B86212;
+    &:hover {
+      width: 30%;
+      font-size: 200%;
+      text-decoration: none;
+    }
+}
+
+#work-button{
+  @extend #resume-button;
+  background-color: #96A7DB;
+  color: #6246AB;
+}
+
+#skills-button{
+  @extend #resume-button;
+  background-color: #96D727;
+  color: #0C9324;
+}
+
+#popup-resume{
+  width: 80%;
+  margin-left: 6%;
+  margin-bottom: 15%;
+  font-family: $classy-font;
+  font-size: 130%;
+  text-align: center;
+  padding: 3% 5%;
+  border: #fff double 6px;
+  background-color: #282D3D;
+  color: #fff;
+}
+
+#popup-work{
+  @extend #popup-resume;
+}
+
+#popup-skills{
+  @extend #popup-resume;
+}
+
+.hide-buttons{
+  color: #BA926D;
+  padding: 2% 0%;
+  margin: 2% 0%;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.last-row{
+  color: #F2C9AA;
+  width: 100%;
+  background: #2C2825;
+  bottom: 0px;
+  margin: 0 auto;
+  padding: 1% 0%;
+}
+
+.contact-buttons{
+  float: right;
+}
+
+.contact-info{
+  font-family: $classy-font;
+  padding-top: 1%;
+  float: left;
+}
+
+#copyright-button{
+  padding-right: 0px;
+  padding-top: 3%;
+  font-size: 30px;
+}
+#designer{
+  padding-left: 0;
+  padding-top: 2%;
+  font-size: 11px;
+}
+#designer-link, a:link{
+  color: #F9A353;
+}
